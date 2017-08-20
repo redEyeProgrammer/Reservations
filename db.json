@@ -5,6 +5,8 @@
       "title": "Hawker 400",
       "description": "The best Jetwalker",
       "available": true,
+      "occupancy" : 12,
+      "price": "$13,000",
       "reviews": [
           {
        "name": "John Terry",
