@@ -7,6 +7,7 @@
       "available": true,
       "occupancy" : 12,
       "price": 13000,
+      "type": "planes",
       "reviews": [
           {
        "name": "John Terry",
@@ -28,6 +29,7 @@
       "available": false,
       "occupancy" : 6,
       "price": 8000,
+      "type": "planes",
       "reviews": [
           {
        "name": "Michael Jose",
