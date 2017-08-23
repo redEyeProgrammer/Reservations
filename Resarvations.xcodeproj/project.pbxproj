@@ -8,22 +8,48 @@
 
 /* Begin PBXBuildFile section */
 		86126BAC1F4A0DB700513890 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86126BAB1F4A0DB700513890 /* AppDelegate.swift */; };
-		86126BAE1F4A0DB700513890 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86126BAD1F4A0DB700513890 /* ViewController.swift */; };
 		86126BB11F4A0DB700513890 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86126BAF1F4A0DB700513890 /* Main.storyboard */; };
 		86126BB31F4A0DB700513890 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86126BB21F4A0DB700513890 /* Assets.xcassets */; };
 		86126BB61F4A0DB700513890 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86126BB41F4A0DB700513890 /* LaunchScreen.storyboard */; };
-		86126BBE1F4A0DCC00513890 /* Planes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86126BBD1F4A0DCC00513890 /* Planes.swift */; };
+		86126BC71F4A204100513890 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86126BC61F4A204100513890 /* NetworkClient.swift */; };
+		86126CB81F4A215400513890 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86126CB71F4A215400513890 /* Extensions.swift */; };
+		86126CBA1F4A21A600513890 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86126CB91F4A21A600513890 /* NetworkError.swift */; };
+		86126CBD1F4A21F000513890 /* LoadingHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86126CBB1F4A21F000513890 /* LoadingHUD.swift */; };
+		86126CBE1F4A21F000513890 /* LoadingHUD.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86126CBC1F4A21F000513890 /* LoadingHUD.xib */; };
+		86126CC11F4A23B700513890 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86126CC01F4A23B700513890 /* Services.swift */; };
+		86126CC31F4A95A900513890 /* ServerEnvironments.plist in Resources */ = {isa = PBXBuildFile; fileRef = 86126CC21F4A95A900513890 /* ServerEnvironments.plist */; };
+		86126CC81F4AB96D00513890 /* PlaneStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86126CC71F4AB96D00513890 /* PlaneStoryboard.storyboard */; };
+		86126CCA1F4AB99300513890 /* ServicesStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86126CC91F4AB99300513890 /* ServicesStoryboard.storyboard */; };
+		86126CCC1F4ABBCC00513890 /* CarStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86126CCB1F4ABBCC00513890 /* CarStoryboard.storyboard */; };
+		86126CCE1F4ABD1200513890 /* ServicesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86126CCD1F4ABD1200513890 /* ServicesTableViewController.swift */; };
+		86126CD01F4ABD9F00513890 /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86126CCF1F4ABD9F00513890 /* ServicesViewController.swift */; };
+		86126CD21F4ABF9B00513890 /* CollectionViewCenterFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86126CD11F4ABF9B00513890 /* CollectionViewCenterFlowLayout.swift */; };
+		86126CD41F4D1E8100513890 /* PlanesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86126CD31F4D1E8100513890 /* PlanesViewModel.swift */; };
+		86126CD61F4D343000513890 /* ServicesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86126CD51F4D343000513890 /* ServicesCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		86126BA81F4A0DB700513890 /* Resarvations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Resarvations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86126BAB1F4A0DB700513890 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		86126BAD1F4A0DB700513890 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		86126BB01F4A0DB700513890 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		86126BB21F4A0DB700513890 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86126BB51F4A0DB700513890 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86126BB71F4A0DB700513890 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		86126BBD1F4A0DCC00513890 /* Planes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Planes.swift; sourceTree = "<group>"; };
+		86126BC61F4A204100513890 /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		86126CB71F4A215400513890 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		86126CB91F4A21A600513890 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		86126CBB1F4A21F000513890 /* LoadingHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingHUD.swift; sourceTree = "<group>"; };
+		86126CBC1F4A21F000513890 /* LoadingHUD.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingHUD.xib; sourceTree = "<group>"; };
+		86126CC01F4A23B700513890 /* Services.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		86126CC21F4A95A900513890 /* ServerEnvironments.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ServerEnvironments.plist; sourceTree = "<group>"; };
+		86126CC71F4AB96D00513890 /* PlaneStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PlaneStoryboard.storyboard; sourceTree = "<group>"; };
+		86126CC91F4AB99300513890 /* ServicesStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ServicesStoryboard.storyboard; sourceTree = "<group>"; };
+		86126CCB1F4ABBCC00513890 /* CarStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CarStoryboard.storyboard; sourceTree = "<group>"; };
+		86126CCD1F4ABD1200513890 /* ServicesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesTableViewController.swift; sourceTree = "<group>"; };
+		86126CCF1F4ABD9F00513890 /* ServicesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesViewController.swift; sourceTree = "<group>"; };
+		86126CD11F4ABF9B00513890 /* CollectionViewCenterFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCenterFlowLayout.swift; sourceTree = "<group>"; };
+		86126CD31F4D1E8100513890 /* PlanesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanesViewModel.swift; sourceTree = "<group>"; };
+		86126CD51F4D343000513890 /* ServicesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +82,116 @@
 		86126BAA1F4A0DB700513890 /* Resarvations */ = {
 			isa = PBXGroup;
 			children = (
-				86126BAB1F4A0DB700513890 /* AppDelegate.swift */,
-				86126BBD1F4A0DCC00513890 /* Planes.swift */,
-				86126BAD1F4A0DB700513890 /* ViewController.swift */,
-				86126BAF1F4A0DB700513890 /* Main.storyboard */,
-				86126BB21F4A0DB700513890 /* Assets.xcassets */,
-				86126BB41F4A0DB700513890 /* LaunchScreen.storyboard */,
-				86126BB71F4A0DB700513890 /* Info.plist */,
+				86126CB61F4A20FA00513890 /* Extensions */,
+				86126BC51F4A1FCA00513890 /* Networking */,
+				86126BC41F4A1CB900513890 /* BookingService */,
+				86126BC31F4A1C8300513890 /* Views */,
+				86126BC21F4A1C5F00513890 /* Resources */,
+				86126BC11F4A1C2800513890 /* Supporting Files */,
+				86126BC01F4A1B1A00513890 /* AppDelegate */,
 			);
 			path = Resarvations;
+			sourceTree = "<group>";
+		};
+		86126BC01F4A1B1A00513890 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				86126BAB1F4A0DB700513890 /* AppDelegate.swift */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		86126BC11F4A1C2800513890 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				86126BB71F4A0DB700513890 /* Info.plist */,
+				86126CC21F4A95A900513890 /* ServerEnvironments.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		86126BC21F4A1C5F00513890 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				86126BB21F4A0DB700513890 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		86126BC31F4A1C8300513890 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				86126CBB1F4A21F000513890 /* LoadingHUD.swift */,
+				86126CBC1F4A21F000513890 /* LoadingHUD.xib */,
+				86126BAF1F4A0DB700513890 /* Main.storyboard */,
+				86126BB41F4A0DB700513890 /* LaunchScreen.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		86126BC41F4A1CB900513890 /* BookingService */ = {
+			isa = PBXGroup;
+			children = (
+				86126CBF1F4A231000513890 /* Model */,
+				86126CC61F4A99BC00513890 /* ViewModels */,
+				86126CC51F4A99B700513890 /* Controllers */,
+				86126CC41F4A99B100513890 /* Views */,
+			);
+			name = BookingService;
+			sourceTree = "<group>";
+		};
+		86126BC51F4A1FCA00513890 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				86126BC61F4A204100513890 /* NetworkClient.swift */,
+				86126CB91F4A21A600513890 /* NetworkError.swift */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		86126CB61F4A20FA00513890 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				86126CB71F4A215400513890 /* Extensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		86126CBF1F4A231000513890 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				86126CC01F4A23B700513890 /* Services.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		86126CC41F4A99B100513890 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				86126CD11F4ABF9B00513890 /* CollectionViewCenterFlowLayout.swift */,
+				86126CC71F4AB96D00513890 /* PlaneStoryboard.storyboard */,
+				86126CC91F4AB99300513890 /* ServicesStoryboard.storyboard */,
+				86126CCB1F4ABBCC00513890 /* CarStoryboard.storyboard */,
+				86126CD51F4D343000513890 /* ServicesCollectionViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		86126CC51F4A99B700513890 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				86126CCD1F4ABD1200513890 /* ServicesTableViewController.swift */,
+				86126CCF1F4ABD9F00513890 /* ServicesViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		86126CC61F4A99BC00513890 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				86126CD31F4D1E8100513890 /* PlanesViewModel.swift */,
+			);
+			name = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,8 +254,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86126CC81F4AB96D00513890 /* PlaneStoryboard.storyboard in Resources */,
+				86126CC31F4A95A900513890 /* ServerEnvironments.plist in Resources */,
 				86126BB61F4A0DB700513890 /* LaunchScreen.storyboard in Resources */,
+				86126CCA1F4AB99300513890 /* ServicesStoryboard.storyboard in Resources */,
 				86126BB31F4A0DB700513890 /* Assets.xcassets in Resources */,
+				86126CBE1F4A21F000513890 /* LoadingHUD.xib in Resources */,
+				86126CCC1F4ABBCC00513890 /* CarStoryboard.storyboard in Resources */,
 				86126BB11F4A0DB700513890 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,9 +272,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86126BBE1F4A0DCC00513890 /* Planes.swift in Sources */,
-				86126BAE1F4A0DB700513890 /* ViewController.swift in Sources */,
 				86126BAC1F4A0DB700513890 /* AppDelegate.swift in Sources */,
+				86126CC11F4A23B700513890 /* Services.swift in Sources */,
+				86126CD01F4ABD9F00513890 /* ServicesViewController.swift in Sources */,
+				86126BC71F4A204100513890 /* NetworkClient.swift in Sources */,
+				86126CD61F4D343000513890 /* ServicesCollectionViewCell.swift in Sources */,
+				86126CB81F4A215400513890 /* Extensions.swift in Sources */,
+				86126CCE1F4ABD1200513890 /* ServicesTableViewController.swift in Sources */,
+				86126CD21F4ABF9B00513890 /* CollectionViewCenterFlowLayout.swift in Sources */,
+				86126CD41F4D1E8100513890 /* PlanesViewModel.swift in Sources */,
+				86126CBD1F4A21F000513890 /* LoadingHUD.swift in Sources */,
+				86126CBA1F4A21A600513890 /* NetworkError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

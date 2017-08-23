@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8cd-4K-oYn">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="7DZ-OM-GfB">
+            <objects>
+                <navigationController id="8cd-4K-oYn" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dz1-eN-oLo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="1Kj-I4-flP" kind="relationship" relationship="rootViewController" id="700-4t-bTT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iZZ-bm-xb4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-570" y="174"/>
+        </scene>
+        <!--Services-->
+        <scene sceneID="6BC-7W-UkQ">
+            <objects>
+                <tableViewController automaticallyAdjustsScrollViewInsets="NO" id="1Kj-I4-flP" customClass="ServicesTableViewController" customModule="Resarvations" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="105" sectionHeaderHeight="28" sectionFooterHeight="28" id="ujh-uq-yfT">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.92124956849999995" green="0.92194885019999995" blue="0.92135781049999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <sections>
+                            <tableViewSection id="FpG-p1-yCT">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="S7U-tD-FWh">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="105"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="S7U-tD-FWh" id="dxg-h1-JdZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="104.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="plane" translatesAutoresizingMaskIntoConstraints="NO" id="Epx-yc-W2p">
+                                                    <rect key="frame" x="8" y="8" width="133" height="63"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="63" id="inT-ET-KTf"/>
+                                                        <constraint firstAttribute="width" constant="133" id="kPm-0d-qwY"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Plane Services" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sCF-YK-u3x">
+                                                    <rect key="frame" x="149" y="8" width="218" height="22"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Let us take care of your home cleaning, so you won't have to do it!" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ie-gQ-9G6">
+                                                    <rect key="frame" x="149" y="31.5" width="218" height="50.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Epx-yc-W2p" firstAttribute="leading" secondItem="dxg-h1-JdZ" secondAttribute="leadingMargin" id="03n-bQ-PzO"/>
+                                                <constraint firstItem="Epx-yc-W2p" firstAttribute="top" secondItem="dxg-h1-JdZ" secondAttribute="topMargin" id="37L-nT-7FR"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="2ie-gQ-9G6" secondAttribute="trailing" id="8bC-AD-HBn"/>
+                                                <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="2ie-gQ-9G6" secondAttribute="bottom" id="HSd-fB-diG"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="sCF-YK-u3x" secondAttribute="trailing" id="YBd-Dy-V7w"/>
+                                                <constraint firstItem="sCF-YK-u3x" firstAttribute="top" secondItem="dxg-h1-JdZ" secondAttribute="topMargin" id="dey-UB-gcb"/>
+                                                <constraint firstItem="sCF-YK-u3x" firstAttribute="leading" secondItem="Epx-yc-W2p" secondAttribute="trailing" constant="8" id="eGB-SL-9rt"/>
+                                                <constraint firstItem="2ie-gQ-9G6" firstAttribute="top" secondItem="sCF-YK-u3x" secondAttribute="bottom" constant="2" id="ghC-k9-3BB"/>
+                                                <constraint firstItem="2ie-gQ-9G6" firstAttribute="leading" secondItem="Epx-yc-W2p" secondAttribute="trailing" constant="8" id="rZb-CK-sC1"/>
+                                                <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="Epx-yc-W2p" secondAttribute="bottom" priority="999" id="uwf-4G-xDI"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="hyT-OW-odi" kind="show" identifier="planes" id="s90-BU-Ll2"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="eW0-i6-3ql">
+                                        <rect key="frame" x="0.0" y="105" width="375" height="105"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eW0-i6-3ql" id="jU4-dU-FQl">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="104.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="car" translatesAutoresizingMaskIntoConstraints="NO" id="ucd-PM-Eyw">
+                                                    <rect key="frame" x="8" y="8" width="133" height="63"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="133" id="5cU-1m-aRa"/>
+                                                        <constraint firstAttribute="height" constant="63" id="RqI-df-2b5"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Car Services" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wV2-h2-kup">
+                                                    <rect key="frame" x="149" y="8" width="218" height="22"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Our best-in-class business services will make your office shine!" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DHS-I5-4xm">
+                                                    <rect key="frame" x="149" y="31.5" width="218" height="50.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="DHS-I5-4xm" firstAttribute="leading" secondItem="ucd-PM-Eyw" secondAttribute="trailing" constant="8" id="1Yw-VB-GaP"/>
+                                                <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="DHS-I5-4xm" secondAttribute="bottom" id="2oo-9c-BMR"/>
+                                                <constraint firstItem="ucd-PM-Eyw" firstAttribute="leading" secondItem="jU4-dU-FQl" secondAttribute="leadingMargin" id="7ap-h3-8Ak"/>
+                                                <constraint firstItem="DHS-I5-4xm" firstAttribute="top" secondItem="wV2-h2-kup" secondAttribute="bottom" constant="2" id="7jF-66-byE"/>
+                                                <constraint firstItem="wV2-h2-kup" firstAttribute="leading" secondItem="ucd-PM-Eyw" secondAttribute="trailing" constant="8" id="Ald-97-Kf9"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="DHS-I5-4xm" secondAttribute="trailing" id="Mwo-jc-tvq"/>
+                                                <constraint firstItem="wV2-h2-kup" firstAttribute="top" secondItem="jU4-dU-FQl" secondAttribute="topMargin" id="fjQ-9W-yhT"/>
+                                                <constraint firstItem="ucd-PM-Eyw" firstAttribute="top" secondItem="jU4-dU-FQl" secondAttribute="topMargin" id="jNt-ar-qoc"/>
+                                                <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="ucd-PM-Eyw" secondAttribute="bottom" priority="999" id="qSh-kG-ERS"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="wV2-h2-kup" secondAttribute="trailing" id="txG-4L-rth"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Cnx-Ua-3Hw" kind="show" identifier="cars" id="F5x-AM-yTy"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="1Kj-I4-flP" id="SbW-Do-sjP"/>
+                            <outlet property="delegate" destination="1Kj-I4-flP" id="GHl-MT-3cx"/>
+                        </connections>
+                    </tableView>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" title="Services" id="WNh-b5-JMT"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uhu-fA-pRJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="262" y="173"/>
+        </scene>
+        <!--PlaneStoryboard-->
+        <scene sceneID="bW7-UK-mCT">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PlaneStoryboard" id="hyT-OW-odi" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="muu-l4-1Yh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="991" y="-43"/>
+        </scene>
+        <!--CarStoryboard-->
+        <scene sceneID="MqM-zh-8wk">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CarStoryboard" id="Cnx-Ua-3Hw" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F9Y-Dm-8aU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1006" y="79"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="car" width="602" height="280"/>
+        <image name="plane" width="800" height="400"/>
+    </resources>
+</document>
