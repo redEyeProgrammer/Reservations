@@ -64,6 +64,16 @@ class ServicesViewController: UIViewController {
         super.viewDidLoad()
         loadPlanes()
     }
+    
+    
+    // MARK: - Segue
+    public override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let viewController = segue.destination
+            as? ServiceDetailController else { return }
+        let indexPath = collectionView.indexPathsForSelectedItems!.first!
+        viewController.planeViewModel = planesViewModels[indexPath.row]
+    }
+    
 }
 
 

@@ -33,25 +33,25 @@ public final class PlanesViewModel {
     public let services: Services
     
     public let descriptionText: String
-    //public let imageURL: URL?
+    public let imageURL:  URL?
     public let priceText: String
     public let titleText: String
-    public let available: Bool
-    public let occupancy: Int
+    public let available: String
+    public let occupancy: String
     
     // MARK: - Object Lifecycle
     public init(service: Services) {
         
         self.services = service
         descriptionText = service.description
-        //imageURL = product.imageURL
+        imageURL = service.imageURL
         titleText = service.title
-        occupancy = service.occupancy
-        available = service.available
+        occupancy = "Max Occupancy is \(String(service.occupancy))"
+        available = String(service.available)
         
         if service.price > 0 {
             let price = PlanesViewModel.numberFormatter.string(from: service.price as NSNumber)!
-            priceText = "Only \(price) / hour"
+            priceText = "\(price) / Daily"
         }  else {
             priceText = "Contact Us for Pricing"
         }
@@ -61,12 +61,12 @@ public final class PlanesViewModel {
 extension PlanesViewModel {
     
     public func configure(_ view: PlanesViewModelView) {
-       // _ = view.productImageView?.rw_setImage(url: imageURL)
+        _ = view.planesImageView?.rw_setImage(url: imageURL)
         view.planesPriceLabel?.text = priceText
         view.planesDescriptionLabel?.text = descriptionText
         view.planesTitleLabel?.text = titleText
-        view.planesAvailableLabel?.text = String(available)
-        view.planesOccupancyLabel?.text = String(occupancy)
+        view.planesAvailableLabel?.text = available
+        view.planesOccupancyLabel?.text = occupancy
         
     }
 }

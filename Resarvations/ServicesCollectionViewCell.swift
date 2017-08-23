@@ -33,7 +33,6 @@ extension ServicesCollectionViewCell: PlanesViewModelView {
     public var planesTitleLabel: UILabel {
         return label
     }
-
     
     
 }

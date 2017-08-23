@@ -26,6 +26,9 @@
 		86126CD21F4ABF9B00513890 /* CollectionViewCenterFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86126CD11F4ABF9B00513890 /* CollectionViewCenterFlowLayout.swift */; };
 		86126CD41F4D1E8100513890 /* PlanesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86126CD31F4D1E8100513890 /* PlanesViewModel.swift */; };
 		86126CD61F4D343000513890 /* ServicesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86126CD51F4D343000513890 /* ServicesCollectionViewCell.swift */; };
+		86126CD81F4D53A100513890 /* ServiceDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86126CD71F4D53A100513890 /* ServiceDetailController.swift */; };
+		86126CDA1F4DE55900513890 /* ReviewsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86126CD91F4DE55900513890 /* ReviewsStoryboard.storyboard */; };
+		86126CDC1F4DEA4500513890 /* ReviewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86126CDB1F4DEA4500513890 /* ReviewsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +53,9 @@
 		86126CD11F4ABF9B00513890 /* CollectionViewCenterFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCenterFlowLayout.swift; sourceTree = "<group>"; };
 		86126CD31F4D1E8100513890 /* PlanesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanesViewModel.swift; sourceTree = "<group>"; };
 		86126CD51F4D343000513890 /* ServicesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesCollectionViewCell.swift; sourceTree = "<group>"; };
+		86126CD71F4D53A100513890 /* ServiceDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceDetailController.swift; sourceTree = "<group>"; };
+		86126CD91F4DE55900513890 /* ReviewsStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ReviewsStoryboard.storyboard; sourceTree = "<group>"; };
+		86126CDB1F4DEA4500513890 /* ReviewsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +176,7 @@
 			children = (
 				86126CD11F4ABF9B00513890 /* CollectionViewCenterFlowLayout.swift */,
 				86126CC71F4AB96D00513890 /* PlaneStoryboard.storyboard */,
+				86126CD91F4DE55900513890 /* ReviewsStoryboard.storyboard */,
 				86126CC91F4AB99300513890 /* ServicesStoryboard.storyboard */,
 				86126CCB1F4ABBCC00513890 /* CarStoryboard.storyboard */,
 				86126CD51F4D343000513890 /* ServicesCollectionViewCell.swift */,
@@ -182,6 +189,8 @@
 			children = (
 				86126CCD1F4ABD1200513890 /* ServicesTableViewController.swift */,
 				86126CCF1F4ABD9F00513890 /* ServicesViewController.swift */,
+				86126CD71F4D53A100513890 /* ServiceDetailController.swift */,
+				86126CDB1F4DEA4500513890 /* ReviewsTableViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -255,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				86126CC81F4AB96D00513890 /* PlaneStoryboard.storyboard in Resources */,
+				86126CDA1F4DE55900513890 /* ReviewsStoryboard.storyboard in Resources */,
 				86126CC31F4A95A900513890 /* ServerEnvironments.plist in Resources */,
 				86126BB61F4A0DB700513890 /* LaunchScreen.storyboard in Resources */,
 				86126CCA1F4AB99300513890 /* ServicesStoryboard.storyboard in Resources */,
@@ -272,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86126CDC1F4DEA4500513890 /* ReviewsTableViewController.swift in Sources */,
 				86126BAC1F4A0DB700513890 /* AppDelegate.swift in Sources */,
 				86126CC11F4A23B700513890 /* Services.swift in Sources */,
 				86126CD01F4ABD9F00513890 /* ServicesViewController.swift in Sources */,
@@ -280,6 +291,7 @@
 				86126CB81F4A215400513890 /* Extensions.swift in Sources */,
 				86126CCE1F4ABD1200513890 /* ServicesTableViewController.swift in Sources */,
 				86126CD21F4ABF9B00513890 /* CollectionViewCenterFlowLayout.swift in Sources */,
+				86126CD81F4D53A100513890 /* ServiceDetailController.swift in Sources */,
 				86126CD41F4D1E8100513890 /* PlanesViewModel.swift in Sources */,
 				86126CBD1F4A21F000513890 /* LoadingHUD.swift in Sources */,
 				86126CBA1F4A21A600513890 /* NetworkError.swift in Sources */,

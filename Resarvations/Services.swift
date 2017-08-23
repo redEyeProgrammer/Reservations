@@ -37,6 +37,7 @@ public final class Services {
         static let price = "price"
         static let title = "title"
         static let reviews = "reviews"
+        static let imageURL = "imageURL"
         static let type = "type"
     }
     
@@ -50,12 +51,13 @@ public final class Services {
     public let price: Int
     public let reviews: Array<Any>
     public let title: String
+    public let imageURL: URL?
     public let type: ServiceType
     
     // MARK: - Object Lifecycle
     public init?(json: [String: Any]) {
         
-        /*
+        
         let imageURL: URL?
         
         if let imageURLString = json[Keys.imageURL] as? String {
@@ -64,7 +66,7 @@ public final class Services {
         } else {
             imageURL = nil
         }
- */
+ 
         
         guard let identifier = json[Keys.id] as? Int,
             let description = json[Keys.description] as? String,
@@ -86,6 +88,7 @@ public final class Services {
         self.type = type
         self.price = price
         self.reviews = reviews
+        self.imageURL = imageURL
     }
  /*
     public init(imageURL: URL?,
@@ -95,13 +98,14 @@ public final class Services {
                 title: String,
                 type: ServiceType) {
         
-        self.identifier = nil
-        self.imageURL = imageURL
-        self.priceHourly = priceHourly
-        self.priceSquareFoot = priceSquareFoot
-        self.productDescription = productDescription
-        self.title = title
-        self.type = type
+     self.identifier = identifier
+     self.description = description
+     self.available = available
+     self.occupancy = occupancy
+     self.title = title
+     self.type = type
+     self.price = price
+     self.reviews = reviews
     }
  */
     
