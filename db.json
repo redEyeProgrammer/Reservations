@@ -3,7 +3,7 @@
     {
       "id": 1001,
       "title": "Hawker 400",
-      "description": "The best Jetwalker",
+      "description": "The most versatile aircraft in the fleet with the comfort of a larger aircraft and the agility of smaller models, the medium jet offers best in class experience",
       "available": true,
       "occupancy" : 12,
       "price": 13000,
@@ -25,7 +25,7 @@
     {
       "id": 1002,
       "title": "Learjet 40",
-      "description": "Blue in the Sky",
+      "description": "The all-around performers in private jet charter, mid-size jets offer outstanding value for four to five hour journeys",
       "available": false,
       "occupancy" : 6,
       "price": 8000,
@@ -42,7 +42,95 @@
        "date": "2016-08-10"
       }
       ]
-    }
+    },
     
+    {
+      "id": 1003,
+      "title": "Gulfstream G280",
+      "description": "Typically seating 6 to 9 passengers and feature stand-up cabins, a mini galley, and an enclosed lavatory",
+      "available": true,
+      "occupancy" : 16,
+      "price": 18000,
+      "type": "planes",
+      "reviews": [
+          {
+       "name": "Steve Rosario",
+       "comments": "Best Private Jet Experience ever",
+       "date": "2017-04-10"
+      }, {
+        
+        "name": "Sam Snow",
+       "comments": "Bad Customer experience",
+       "date": "2016-09-10"
+      }
+      ]
+    },
+    
+    
+    {
+      "id": 1004,
+      "title": "Citation XLS",
+      "description": "A sleek entrance into private jet class, the best value in jet charter, light jets feature cabins accommodating 6 to 8 passengers comfortably.",
+      "available": true,
+      "occupancy" : 8,
+      "price": 5000,
+      "type": "planes",
+      "reviews": [
+          {
+       "name": "Adrianna Austin",
+       "comments": "Best Private Jet Experience ever",
+       "date": "2017-03-05"
+      }, {
+        
+        "name": "Philip Ramsey",
+       "comments": "Spacious jet that fits all modeled capacity",
+       "date": "2017-10-11"
+      }
+      ]
+    },
+    
+    {
+      "id": 1005,
+      "title": "Phenom 300",
+      "description": "Heavy jets are perfect for international journeys and luxurious transcontinental travel.",
+      "available": true,
+      "occupancy" : 9,
+      "price": 2300,
+      "type": "planes",
+      "reviews": [
+          {
+       "name": "Austin Rivers",
+       "comments": "Best Private Jet Experience ever",
+       "date": "2017-03-05"
+      }, {
+        
+        "name": "Oliver James",
+       "comments": "Spacious jet that fits all modeled capacity",
+       "date": "2017-10-11"
+      }
+      ]
+    },
+    
+    {
+      "id": 1006,
+      "title": "Lear 40XR",
+      "description": "A sleek entrance into private jet class, the best value in jet charter, light jets feature cabins accommodating 6 to 8 passengers comfortably.",
+      "available": true,
+      "occupancy" : 7,
+      "price": 4500,
+      "type": "planes",
+      "reviews": [
+          {
+       "name": "Adrianna Austin",
+       "comments": "Best Private Jet Experience ever",
+       "date": "2017-03-05"
+      }, {
+        
+        "name": "Philip Ramsey",
+       "comments": "I demanded a full refund. Terrible experience",
+       "date": "2017-10-11"
+      }
+      ]
+    }
   ]
 }
